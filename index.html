@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+/*  body csss        */
         body {
             background-color: #131313;
             margin: 0;
@@ -13,7 +14,7 @@
             display: grid;
             place-items: center;
         }
-
+/* text animation css */
         .text{
             color: #fff;
             text-transform: capitalize;
@@ -23,26 +24,26 @@
             font-size: 20px;
             max-width: 0;
             animation: typing 5s steps(30) infinite alternate;
-
+/* text-conatainer blink css */
         }
         .text-conatainer::after{
             content: " |";
             animation: blink 0.5s step-end infinite alternate;
             background-color: #fff;
 
-
+/* text center css */
         }
         .text-conatainer{
             display: flex;
             align-items: center;
-
+/* text typing animation css */
         }
         @keyframes typing{
             to{
                 max-width: 35ch;
 
             }
-            
+/* text blink animation css             */
         }
         @keyframes blink{
             25%{
